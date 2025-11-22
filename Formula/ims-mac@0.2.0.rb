@@ -1,16 +1,17 @@
-class ImsMac < Formula
+class ImsMacAT020 < Formula
   desc "Input Method Status tool for macOS"
   homepage "https://github.com/LuSrackhall/ims-mac"
-  version "pre.0.4.0"
+  version "0.2.0"
+  keg_only :versioned_formula
 
   on_arm do
     url "https://github.com/LuSrackhall/ims-mac/releases/download/#{version}/dist-arm.zip"
-    sha256 "f67ce20919d6da050a128f767c92bf1390064dbb6359b64eaedfa6303a89889c"
+    sha256 "51cba98c71877bdee1ce974a51c2f3c503dd6d1c85189bfb56274f8bcaa35529"
   end
 
   on_intel do
     url "https://github.com/LuSrackhall/ims-mac/releases/download/#{version}/dist-x64.zip"
-    sha256 "b6a6195e1290df417aee76a1bee0913b0e43f6167b8d6a5a84c1b05e7002afb4"
+    sha256 "58a5bd8015dc9252b3e0d82fe88ba7245cdb4d0a856885ba1851d2ef33c38fd9"
   end
 
   def install
